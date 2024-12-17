@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Tag Example</title>
+</head>
+<body>
+    <h1>HTML Input Tag Example with Explanations</h1>
+    <form action="http://www.nta.com/submitData" method="POST">
+        <!-- Text Input Field -->
+        <!-- The placeholder provides a hint, and maxlength limits input to 50 characters -->
+        <label for="username">Username:</label>
+        <input 
+            type="text" 
+            id="username" 
+            name="username" 
+            placeholder="Username" 
+            maxlength="50" 
+            required>
+        <br><br>
+
+        <!-- Password Input Field -->
+        <!-- This hides the input characters for security -->
+        <label for="password">Password:</label>
+        <input 
+            type="password" 
+            id="password" 
+            name="password" 
+            minlength="8" 
+            placeholder="Password"
+            required>
+        <br><br>
+
+        <!-- Checkbox Input -->
+        <!-- The value is sent to the server if checked -->
+        <label>
+            <input 
+                type="checkbox" 
+                name="subscribe" 
+                value="yes"> Subscribe to newsletter
+        </label>
+        <br><br>
+
+        <!-- Radio Buttons -->
+        <!-- Allows the user to choose only one option -->
+        <label>Gender:</label>
+        <input 
+            type="radio" 
+            id="male"
+            name="gender" 
+            value="male" 
+            required> 
+        <label for="male">Male</label>
+        <input 
+        type="radio" 
+        id="female"
+        name="gender" 
+        value="female" 
+        required>
+        <label for="female">Female</label>
+        <input 
+        type="radio" 
+        id="other" 
+            name="gender" 
+            value="other" 
+            required> 
+            <label for="other">Other</label>
+        <br><br>
+
+        <!-- Number Input -->
+        <!-- The step attribute ensures only multiples of 5 are valid -->
+        <label for="age">Age:</label>
+        <input 
+            type="number" 
+            id="age" 
+            name="age" 
+            min="18" 
+            max="100" 
+            step="5" 
+            required>
+        <br><br>
+
+        <!-- Range Input -->
+        <!-- Used for sliders, value sets the default position -->
+        <label for="rating">Rate our service (1-10):</label>
+        <input 
+            type="range" 
+            id="rating" 
+            name="rating" 
+            min="0" 
+            max="10" 
+            value="10">
+        <br><br>
+
+        <!-- File Upload Input -->
+        <!-- Accept ensures only image files can be uploaded -->
+        <label for="profile-pic">Upload Profile Picture:</label>
+        <input 
+            type="file" 
+            id="profile-pic" 
+            name="profile_pic" 
+            accept="video/*">
+        <br><br>
+
+        <!-- Hidden Input -->
+        <!-- Used to include data that is not visible to the user -->
+        <input 
+            type="hidden" 
+            name="hidden_data" 
+            value="12345">
+            <input type="text" onblur="alert('Input lost focus')">
+
+
+        <!-- Submit Button -->
+        <!-- Sends the form data to the server -->
+        <input 
+            type="submit" 
+            value="Submit">
+
+            
+    </form>
+</body>
+</html>

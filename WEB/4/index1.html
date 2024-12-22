@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Excercise: This is the form to make a account over the Social Media</h2>
+    <form action="/submit" method="post">
+        <div>Create Account</div>
+        <div>
+        <Label for="username">Username</Label>
+        <input type="text" placeholder="Username"
+        id="Username">
+
+        </div>
+        <div>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Password">
+        </div>
+        <div>
+
+            <label for="repassword">rePassword</label>
+            <input type="repassword" id="repassword" placeholder="rePassword">
+        </div>
+        <div>
+            <label for="proImage"></label>
+            <input type="file" id ="proImage"
+            name="profile-pic" placeholder="Upload Profile Picture">
+        </div>
+        <div>
+            <label for="private">Private</label>
+            <input type="radio" name="account" id="private">
+        </div>
+        <div>
+            <label for="public">Public</label>
+            <input type="radio" name="account" id="public">
+        </div>
+        <input type="button" value="submit" id="submit">
+
+    </form>
+</body>
+</html>

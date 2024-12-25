@@ -1,0 +1,2 @@
+//There are 2 types of error first is compiled error and second is runtime error
+//There is one most effective way to handle era handling in which there are 23terms try catchand blockIntrythere is a chance of errorin the catchwe define what is the errorand in the block

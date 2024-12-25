@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="header">
+        <div class="nav-logo">
+            <span>Logo</span>
+            <div class="nav-name">Website</div>
+        </div>
+        <div class="nav-menu" id="myNavMenu">
+            <ul class="nav_menu_list">
+                <li class="nav-list"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-list"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-list"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-list"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-menu-btn" onclick="myMenuFunction()">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <div class="wrapper">
+        <section id="home" class="featured-box">
+            <div class="featured-text">
+                <h1 class="featured-name">Hello, I'm a Web Developer</h1>
+                <p class="featured-text-info">I build amazing websites.</p>
+            </div>
+        </section>
+
+        <section id="about" class="about-info">
+            <h2>About Me</h2>
+            <p>This is some information about me.</p>
+        </section>
+
+        <section id="projects" class="project-container">
+            <div class="project-box">
+                <i class="fa fa-code"></i>
+                <h3>Project 1</h3>
+                <label>Description of Project 1</label>
+            </div>
+            <div class="project-box">
+                <i class="fa fa-code"></i>
+                <h3>Project 2</h3>
+                <label>Description of Project 2</label>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-info">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:someone@example.com">someone@example.com</a></p>
+        </section>
+    </div>
+
+    <footer>
+        <div class="top-footer">
+            <p>Footer Content</p>
+        </div>
+        <div class="middle-footer">
+            <ul class="footer-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="bottom-footer">
+            <p>&copy; 2024 Your Website</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

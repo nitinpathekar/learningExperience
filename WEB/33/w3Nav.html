@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W3 Navbar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        body {
+            color: black;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        li a {
+            text-decoration: none;
+            color: black;
+
+        }
+
+        li input {
+            padding: 7px;
+            border-radius: 25px;
+        }
+
+        input:hover {
+            border: 3px solid rgb(0, 137, 0);
+        }
+
+        ul div {
+            padding: 5px;
+            width: 130px;
+            border-radius: 25px;
+            background: rgb(45, 169, 45);
+        }
+
+        nav>ul>div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+
+        }
+
+        div>li {
+            margin-right: 15px;
+            /* padding-right: 5px; */
+        }
+         .sign{
+            border: solid #00c40a;
+            background-color:#00c40a ;
+            border-radius: 25px;
+            
+    padding: 2px 15px;
+
+            
+        }
+        nav{
+            padding-bottom: 5px;
+            border-bottom: 2px solid rgb(92, 92, 92,0.2);
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#"><img src="w3schools.svg" alt="" height="45px"></a></li>
+            <li><a href="#">Tutorial</a></li>
+            <li><a href="#">Exercise</a></li>
+            <li><a href="#">Certificate</a></li>
+            <li><a href="#">Service</a></li>
+            <li><input type="text" placeholder="Search..."></li>
+            <div class="enter">
+                <li><a href="#" class="sign">SignUp</a></li>
+                <li><a href="#">LogIn</a></li>
+            </div>
+        </ul>
+    </nav>
+
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable</title>
+    <style>
+        :root{
+            --mainColor: rgb(240, 212, 30);
+            --secColor: rgb(173, 120, 82);
+
+        }
+        .container{
+            background-color: var(--mainColor,yellow);
+
+            padding: 10px;
+        }
+        .box{
+            padding: 10px;
+            margin:20px 20px 20px;
+            background-color: var(--secColor,brown);
+            color: var(--mainColoR,white);
+            /*  their is error in color */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            this is inside box
+        </div>
+    </div>
+    <div class="con boxs"></div>
+    <div class="con boxs"></div>
+    <div class="con boxs"></div>
+    
+</body>
+</html>

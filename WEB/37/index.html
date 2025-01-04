@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .position{
+            height: 20vw;
+            width: 20vw;
+           background-color:  aqua;
+           border: 2px solid burlywood;
+        }
+        .static{
+            position: static;
+        }
+        .relative{
+            position:relative;
+            top:50px;
+            bottom: 10px;
+        }
+        .fixed{
+            position: fixed;
+        }
+        .sticky {
+            position: sticky;
+            bottom: 0px;
+        }
+        .absolute{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="position static">postion Static(Default)</div>
+    <div class="position relative">position relative</div>
+    <div class="position fixed">position fixed</div>
+    <div class="position sticky">position sticky</div>
+    <div class="position absolute">position absolute</div>
+</body>
+</html>

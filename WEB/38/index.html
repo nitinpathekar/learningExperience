@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+
+    <style>
+        
+        .item{
+            height: 100px;
+            width: 100px;
+            background-color: #2ccbc6;
+            border: 2px solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container{
+            margin: 25px;
+            border: 2px solid rgb(186, 185, 185);
+            display: flex;
+            height:70vh
+        }
+        .container1{
+            justify-content: space-around;
+            
+            flex-wrap: wrap;
+            align-content: space-around;
+        }
+        .container2{
+            justify-content: space-around;
+            flex-wrap: wrap;
+            align-content: space-around;
+            /* align-items: center; */
+            flex-direction: column;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container container1">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <div class="container container2">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+    <div class="container container3">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <div class="container container4">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+    
+    <div class="container container5">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+
+    background-image: url('https://img.freepik.com/free-vector/dark-hexagonal-background-with-gradient-color_79603-1410.jpg');
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+.card
+{
+    background-image: url('https://img.freepik.com/free-vector/dark-hexagonal-background-with-gradient-color_79603-1410.jpg');
+    background-position: center;
+    height: 75vmin;
+    width: 50vmin;
+    background-color: red;
+    border: 2px solid gray;
+    border-radius: 5vh;
+    box-shadow: 5px 5px 11px gray;
+    overflow:hidden;
+
+    
+}
+
+.card .image {
+    background: white;
+    height: 30vh;
+    width: 100%; /* Optional: Add a width */
+    position: relative;
+    overflow: hidden; /* Ensures the image doesn't overflow */
+    display: flex;    /* Flexbox ensures easy alignment */
+    justify-content: center; /* Centers horizontally */
+    align-items: center;     /* Centers vertically */
+    border-bottom: 2px solid gray;
+    
+    box-shadow:1px 1px 2px gray;
+    z-index: 11;
+  }
+  
+  .card .image img {
+    object-fit: cover;    
+    object-position: center; /* Centers the image content */
+    width: 100%;          /* Full width of the container */
+    height: 100%;         /* Full height of the container */
+    
+  }
+  .capsule span{
+    font-size: small;
+
+    border: 2px solid gray;
+    color:aliceblue;
+    border-radius: 25px;
+    padding: 2px;
+    padding-inline: 7px;
+    position: relative;;
+    top: 20px;
+    margin-left:10px;
+  }
+  h1{
+    color: aliceblue;
+    position:relative;
+    top: 25px;
+    margin-left:10px;
+
+  }
+  .para{
+    color: white;
+    position: relative;
+    top:20px;
+    margin-top: 8px;
+    margin-left:10px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    
+}
+.social{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+.read{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.read a{
+    font-size: large;
+    color: white;
+    text-decoration:  none;
+    position: fixed;
+    bottom: 120px;
+    border: 1.5px solid  gray;
+    border-radius: 40px;
+    padding:10px ;
+}
+.read a:hover{
+    box-shadow: 1px 1px 5px gray;
+}
+@media (orientation: portrait) {
+    body {
+      font-size: 14px; /* Reduce font size for smaller screens */
+    }
+    .card{
+        height: 80vmax;
+        width: 40vmax;
+        display: flex;
+        flex-direction: column;
+  gap: 7px;
+    }
+    .social{
+        display: flex;
+        flex-direction: row;
+    }
+    h1{
+        margin-bottom: 0;
+    }
+  }

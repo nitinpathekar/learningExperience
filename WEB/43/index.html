@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,body{
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .box  {
+            height: 100px;
+            width: 100px;
+            background-color: #626a04;
+            transition-duration: 200ms;
+            transition-delay: .2s;
+            transition-timing-function: ease;
+            transition-property: background-color transform border-radius;
+            animation-name: rect;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }   
+        .box:hover{
+            background-color: #02b4b7;
+            border-radius: 50%;
+            transform: rotate(45deg);
+            
+
+        }
+        @keyframes rect 
+        {
+            0% ,100%{
+                transform: translate(0 ,0);
+            }
+            25%{
+                transform: translate(0 ,200px);
+            }
+            50%{
+                transform: translate(200px, 200px);
+            }
+            75%{
+                transform: translate(200px ,0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

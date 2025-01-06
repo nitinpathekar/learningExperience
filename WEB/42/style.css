@@ -99,8 +99,8 @@ a{
     font-size: large;
     color: white;
     text-decoration:  none;
-    position: fixed;
-    bottom: 120px;
+    position: relative;
+    bottom: 0px;
     border: 1.5px solid  gray;
     border-radius: 40px;
     padding:10px ;
@@ -113,7 +113,7 @@ a{
       font-size: 14px; /* Reduce font size for smaller screens */
     }
     .card{
-        height: 80vmax;
+        height: 70vmax;
         width: 40vmax;
         display: flex;
         flex-direction: column;
@@ -126,4 +126,6 @@ a{
     h1{
         margin-bottom: 0;
     }
-  }
+    
+
+}

@@ -1,0 +1,91 @@
+body{
+    font-family: Poppins,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;
+    color: white;
+    margin: 0;
+    font-size: 12px;
+    
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+header{
+    width: 1140px;
+    max-width: 80%;
+    margin: auto;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 50;
+}
+header li{
+    list-style: none;
+    display: inline;
+    margin-right: 20px;
+}
+.carousel{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    margin-top: -50px;
+    position: relative;
+}
+.carousel .list .item{
+    position: absolute;
+    inset: 0 0 0 0;
+
+}
+.carousel .list .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.carousel .list .item .content{
+    position: absolute;
+    top: 20%;
+    width: 1140px;
+    max-width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-right: 30%;
+    box-sizing: border-box;
+    text-shadow: 0 5px 10px #0004;
+}
+.carousel .list .item .content .author{
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: 5px;
+}
+.carousel .list .item .content .title, .carousel .list .item .content .topic{
+    font-size: 2.5em;
+    font-weight: bold;
+    list-style: 1.3em;
+}
+.carousel .list .item .content .topic{
+    color: orange;
+}
+.carousel .list .item .content .buttons{
+    display: grid;
+grid-template-columns: repeat(2,130px);
+grid-template-rows: 40px;
+gap: 5px;
+margin-top: 20px;
+}
+
+.carousel .list .item .content .buttons button{
+    border: none;
+    text-transform: uppercase;
+    font-weight: 500px;
+    letter-spacing: 3px;
+    transition: 0.3s;
+}
+.carousel .list .item .content .buttons button:nth-child(2){
+    background-color: transparent;
+    color: white;
+    border:1px solid white;
+}
